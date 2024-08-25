@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>the city</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="building-model" src="https://cdn.glitch.global/b785ad23-6513-44bd-9ea2-d40f93140606/1.glb?v=1721500213138"></a-asset-item>
+      </a-assets>
+
+      <a-plane color="#1A1D21" rotation="-90 0 0" width="500" height="500"></a-plane>
+      <a-sky color="#B5E4F6"></a-sky>
+
+      <a-entity gltf-model="#building-model" position="0 0 -150"></a-entity>
+      <a-entity gltf-model="#building-model" position="0 0 150"></a-entity>
+
+      <a-entity gltf-model="#building-model" position="100 0 -150"></a-entity>
+      <a-entity gltf-model="#building-model" position="100 0 150"></a-entity>
+
+      <a-entity gltf-model="#building-model" position="0 0 75"></a-entity>
+      <a-entity gltf-model="#building-model" position="0 0 -75"></a-entity>
+
+      <a-entity gltf-model="#building-model" position="100 0 75"></a-entity>
+      <a-entity gltf-model="#building-model" position="100 0 -75"></a-entity>
+
+      <a-entity gltf-model="#building-model" position="-100 0 75"></a-entity>
+      <a-entity gltf-model="#building-model" position="-100 0 -75"></a-entity>
+
+      <a-entity gltf-model="#building-model" position="100 0 0"></a-entity>
+      <a-entity gltf-model="#building-model" position="-100 0 0"></a-entity>
+
+      <a-entity position="0 2 -5">
+        <a-plane color="#DAC0A3" height="1" width="2" rotation="0 0 0"></a-plane>
+        <a-text value="Welcome to the city" align="center" color="#021526" position="0 0 0"></a-text>
+      </a-entity>
+      <a-plane color="#AF8260" height="4" width="0.5" rotation="0 0 0" position="0 0 -5.25"></a-plane>
+      <a-plane color="#AF8260" height="1.25" width="2.25" position="0 2 -5.25"></a-plane>
+    </a-scene>
+  </body>
+</html>
